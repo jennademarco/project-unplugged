@@ -86,7 +86,8 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/*General Styles*/
+
+   /*General Styles*/
 
 html{
   font-size: 16px;
@@ -128,6 +129,14 @@ p {
   line-height: 1.285;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
 address {
   font-style: normal;
 }
@@ -153,35 +162,43 @@ header {
 }
 
 header .content-wrapper {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; 
+}
+
+header figure {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 0;
 }
 
 header .header-divider {
   background: #3a3a3a;
-  width: 100%;
   height: 1px;
+  width: 100%;
   margin: 10px 0 20px 0;
 }
 
 header nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-flow: row wrap;
   width: 60%;
   font-size: 1.125em;
   font-weight: 700;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 header nav ul {
+  width: 100%;   
   display: flex;
   justify-content: space-around;
-  width: 100%; 
 }
 
 header nav ul li {
@@ -189,8 +206,8 @@ header nav ul li {
 }
 
 footer {
-  flex-direction: column;
   text-align: center;
+  flex-direction: column;
 }
 
 footer p {
@@ -227,11 +244,12 @@ footer .copyright {
 /*Hero-area*/
 
 .hero-area {
+  background: url(../img/bridge.jpg) center no-repeat #333;
+  background-size: cover;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background: url(../img/bridge.jpg) center no-repeat #333;
-  background-size: cover;
 }
 
 .hero-area h1 {
@@ -283,7 +301,10 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/breakfast2.jpg) center no-repeat;
+  background-size: cover;
 }
+
 
 .features h2 {
   margin-bottom: 60px;
@@ -520,6 +541,10 @@ input[type=button] {
   }
 
   /*Hero Area*/
+  .hero-area {
+    min-height: 600px;
+  }
+
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -568,6 +593,7 @@ input[type=button] {
     width: 85%
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
