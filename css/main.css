@@ -230,6 +230,8 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/bridge.jpg) center no-repeat #333;
+  background-size: cover;
 }
 
 .hero-area h1 {
@@ -825,4 +827,5 @@ input[type=button] {
   h3 {
     page-break-after: avoid;
   }
+}
 }
